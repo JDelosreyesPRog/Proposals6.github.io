@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obligations &amp; Contracts Learning Hub - Aj Delos Reyes</title>
+    <meta name="description" content="Interactive study guide for the Obligations and Contracts provisions of the Philippine Civil Code.">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header &amp; Student Identification -->
+    <header>
+        <div class="header-container">
+            <div class="header-title">
+                <h1>Obligations &amp; Contracts Learning Hub</h1>
+                <p>Civil Code of the Philippines - Academic Study Guide</p>
+            </div>
+            <div class="student-badge">
+                <div><strong>Student:</strong> Aj Delos Reyes</div>
+                <div><strong>Student ID:</strong> 23-00089</div>
+                <div><strong>Year &amp; Course:</strong> 4th Year BSIT</div>
+                <div><strong>Subject:</strong> Web Development</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Header -->
+    <nav class="nav-bar">
+        <div class="nav-container" role="tablist" aria-label="Study sections">
+            <button class="nav-item active" data-tab="lessons" role="tab">Lessons &amp; Articles</button>
+            <button class="nav-item" data-tab="flashcards" role="tab">Flashcards Glossary</button>
+            <button class="nav-item" data-tab="checker" role="tab">Contract Validator Tool</button>
+            <button class="nav-item" data-tab="quiz" role="tab">8-Question Quiz</button>
+            <button class="nav-item" data-tab="bookmarks" role="tab">
+                Saved Reviewer <span id="bookmarkBadge" class="badge-count">0</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Workspace -->
+    <main class="main-wrapper" id="main" tabindex="-1">
+
+        <!-- LESSONS TAB -->
+        <div id="lessons" role="tabpanel" class="tab-panel active">
+            <!-- Search &amp; Filter Controls -->
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search terms, articles, or keywords (e.g. Art. 1156, Fraud, Mora, Consent)...">
+                <select id="categoryFilter" class="filter-select">
+                    <option value="ALL">All Categories</option>
+                    <option value="GENERAL">General Provisions (1156-1162)</option>
+                    <option value="NATURE">Nature &amp; Effects (1163-1174)</option>
+                    <option value="CONTRACTS">Contracts &amp; Requisites (1305, 1318)</option>
+                    <option value="DEFECTIVE">Defective Contracts (1380, 1409)</option>
+                </select>
+            </div>
+
+            <p id="noResults" class="no-results" role="status" hidden>No lessons match your search. Try a different keyword or choose All Categories.</p>
+
+            <!-- CARD 1: ART 1156 -->
+            <article class="topic-card" data-category="GENERAL" data-id="art1156">
+                <div class="card-header">
+                    <div class="card-title-group">
+                        <span class="article-tag">Article 1156</span>
+                        <h2>Concept of Obligation</h2>
+                    </div>
+                    <button class="bookmark-btn" data-bookmark="art1156" data-title="Art. 1156 - Concept of Obligation" aria-pressed="false">
+                        <span aria-hidden="true">★</span> <span class="btn-text">Save</span>
+                    </button>
+                </div>
+
+                <div class="section-subtitle">Core Legal Concept</div>
+                <p class="concept-text">An <strong>obligation</strong> is a juridical necessity to give, to do, or not to do (Civil Code of the Philippines). It creates a binding legal tie (<em>vinculum juris</em>) where the creditor can compel the debtor to perform an act or prestation in court.</p>
+
+                <div class="section-subtitle">Essential Elements Breakdown</div>
+                <ul class="bullet-list">
+                    <li><strong>Active Subject (Creditor / Obligee):</strong> The person entitled to demand performance.</li>
+                    <li><strong>Passive Subject (Debtor / Obligor):</strong> The person bound to fulfill the obligation.</li>
+                    <li><strong>Prestation (Object):</strong> The required conduct (to give, to do, or not to do).</li>
+                    <li><strong>Juridical Tie (Vinculum Juris):</strong> The legal relation connecting the parties created by law or contract.</li>
+                </ul>
+
+                <div class="scenario-box">
+                    <div class="scenario-title">💡 Everyday Real-Life Scenario (Halimbawa)</div>
+                    <p><strong>Buying a Smartphone Online:</strong> When you purchase a smartphone from a merchant for ₱15,000, you are the debtor obligated to pay the money, and the merchant is the creditor. Once paid, the roles flip: the merchant becomes the debtor obligated to deliver the phone (prestation), and you become the creditor entitled to demand delivery.</p>
+                </div>
+            </article>
+
+            <!-- CARD 2: ART 1157 -->
+            <article class="topic-card" data-category="GENERAL" data-id="art1157">
+                <div class="card-header">
+                    <div class="card-title-group">
+                        <span class="article-tag">Article 1157</span>
+                        <h2>Sources of Obligations</h2>
+                    </div>
+                    <button class="bookmark-btn" data-bookmark="art1157" data-title="Art. 1157 - Sources of Obligations" aria-pressed="false">
+                        <span aria-hidden="true">★</span> <span class="btn-text">Save</span>
+                    </button>
+                </div>
+
+                <div class="section-subtitle">Core Legal Concept</div>
+                <p class="concept-text">Obligations arise exclusively from five distinct legal sources under Philippine civil law:</p>
+
+                <ul class="bullet-list">
+                    <li><strong>1. Law (Ex Lege):</strong> Expressly established by statute (e.g., duty to pay taxes under the Tax Code).</li>
+                    <li><strong>2. Contracts (Ex Contractu):</strong> Voluntary agreements meeting all legal requisites (Art. 1305).</li>
+                    <li><strong>3. Quasi-Contracts (Ex Quasi-Contractu):</strong> Lawful, voluntary, and unilateral acts to prevent unjust enrichment (e.g., <em>Solutio Indebiti</em> - erroneous payment).</li>
+                    <li><strong>4. Acts/Omissions Punished by Law (Delicts):</strong> Civil liability arising from commission of a crime (Art. 100, Revised Penal Code).</li>
+                    <li><strong>5. Quasi-Delicts / Torts (Ex Quasi-Delicto):</strong> Damage caused by fault or negligence where no pre-existing contract exists (Art. 2176).</li>
+                </ul>
+
+                <div class="scenario-box">
+                    <div class="scenario-title">💡 Real-Life Scenario: Quasi-Delict vs. Quasi-Contract</div>
+                    <p><strong>Quasi-Delict:</strong> A reckless driver crashes into your parked motorcycle. There is no contract between you, but the driver is legally obligated to pay for damages due to negligence.</p>
+                    <p style="margin-top:6px;"><strong>Quasi-Contract:</strong> If GCash accidentally transfers ₱2,000 into your wallet due to a system glitch, you are legally bound to return it under <em>Solutio Indebiti</em>.</p>
+                </div>
+            </article>
+
+            <!-- CARD 3: ART 1163-1174 -->
+            <article class="topic-card" data-category="NATURE" data-id="art1163_1174">
+                <div class="card-header">
+                    <div class="card-title-group">
+                        <span class="article-tag">Articles 1163 - 1174</span>
+                        <h2>Nature and Effect of Obligations</h2>
+                    </div>
+                    <button class="bookmark-btn" data-bookmark="art1163_1174" data-title="Arts. 1163-1174 - Nature &amp; Effects" aria-pressed="false">
+                        <span aria-hidden="true">★</span> <span class="btn-text">Save</span>
+                    </button>
+                </div>
+
+                <div class="section-subtitle">Core Legal Concept &amp; Standard of Care</div>
+                <p class="concept-text">Every person obliged to give something is bound to take care of it with the <strong>diligence of a good father of a family</strong> (bonus paterfamilias), unless the law or stipulation requires another standard of care.</p>
+
+                <div class="section-subtitle">Grounds for Damages (Art. 1170)</div>
+                <ul class="bullet-list">
+                    <li><strong>Fraud (Dolo):</strong> Deliberate intent to evade normal fulfillment of an obligation.</li>
+                    <li><strong>Negligence (Culpa):</strong> Omission of required diligence without deliberate bad intent.</li>
+                    <li><strong>Delay (Mora):</strong> Failure to perform on time after judicial or extrajudicial demand (<em>Mora Solvendi</em> = debtor delay; <em>Mora Accipiendi</em> = creditor delay).</li>
+                    <li><strong>Contravention of Tenor:</strong> Direct violation of any explicit terms of the obligation.</li>
+                </ul>
+
+                <div class="section-subtitle">Fortuitous Events / Caso Fortuito (Art. 1174)</div>
+                <p class="concept-text">No person shall be held liable for events that could not be foreseen, or which, though foreseen, were inevitable (acts of God or force majeure), EXCEPT when specified by law or contract, or when nature of obligation requires assumption of risk.</p>
+
+                <div class="scenario-box">
+                    <div class="scenario-title">💡 Real-Life Scenario: Fortuitous Event Exception</div>
+                    <p>A car rental agency is supposed to deliver a van on Friday. If an unexpected super-typhoon causes flash floods that destroy the van before Friday, they are excused due to a <em>Fortuitous Event</em>. HOWEVER, if the agency was ALREADY in delay (Mora) before the typhoon struck, they remain liable for damages!</p>
+                </div>
+            </article>
+
+            <!-- CARD 4: ART 1305 &amp; 1318 -->
+            <article class="topic-card" data-category="CONTRACTS" data-id="art1305_1318">
+                <div class="card-header">
+                    <div class="card-title-group">
+                        <span class="article-tag">Articles 1305 &amp; 1318</span>
+                        <h2>Definition &amp; Essential Requisites of Contracts</h2>
+                    </div>
+                    <button class="bookmark-btn" data-bookmark="art1305_1318" data-title="Arts. 1305 &amp; 1318 - Requisites of Contracts" aria-pressed="false">
+                        <span aria-hidden="true">★</span> <span class="btn-text">Save</span>
+                    </button>
+                </div>
+
+                <div class="section-subtitle">Definition (Art. 1305)</div>
+                <p class="concept-text">A <strong>contract</strong> is a meeting of minds between two persons whereby one binds himself, with respect to the other, to give something or to render some service.</p>
+
+                <div class="section-subtitle">Three Essential Requisites (Art. 1318)</div>
+                <p class="concept-text">There is NO contract unless the following three elements concur:</p>
+                <ul class="bullet-list">
+                    <li><strong>1. Consent:</strong> Manifested by the meeting of the offer and the acceptance upon the thing and the cause. Must be intelligent, free, and voluntary.</li>
+                    <li><strong>2. Object Certain:</strong> The subject matter of the contract. Must be licit, possible, and determinate or determinable.</li>
+                    <li><strong>3. Cause / Consideration:</strong> The essential reason why each party enters into the agreement (e.g., price for seller, item for buyer).</li>
+                </ul>
+
+                <div class="scenario-box">
+                    <div class="scenario-title">💡 Real-Life Scenario: Freelance IT Contract</div>
+                    <p>An IT student agrees to build a website for a local bakery for ₱20,000. <strong>Consent:</strong> Both signed the agreement freely. <strong>Object:</strong> Web development services. <strong>Cause:</strong> ₱20,000 payment for the student, and completed website for the client. All 3 requisites are met, creating a binding contract.</p>
+                </div>
+            </article>
+
+            <!-- CARD 5: DEFECTIVE CONTRACTS -->
+            <article class="topic-card" data-category="DEFECTIVE" data-id="defective_contracts">
+                <div class="card-header">
+                    <div class="card-title-group">
+                        <span class="article-tag">Articles 1380 &amp; 1409</span>
+                        <h2>Defective Contracts Classification</h2>
+                    </div>
+                    <button class="bookmark-btn" data-bookmark="defective_contracts" data-title="Defective Contracts Overview" aria-pressed="false">
+                        <span aria-hidden="true">★</span> <span class="btn-text">Save</span>
+                    </button>
+                </div>
+
+                <p class="concept-text">Under Philippine law, defective contracts are categorized into 4 levels according to severity of defect:</p>
+
+                <div class="contract-status-grid">
+                    <div class="status-card rescissible">
+                        <h4>1. Rescissible</h4>
+                        <p style="font-size:0.85rem; color:var(--text-muted);">Valid until rescinded. Defect is economic damage or financial lesion to a party or third person (e.g., sale of property to defraud creditors).</p>
+                    </div>
+                    <div class="status-card voidable">
+                        <h4>2. Voidable</h4>
+                        <p style="font-size:0.85rem; color:var(--text-muted);">Valid until annulled. Defect is vitiated consent (intimidation, fraud, mistake) or incapacity of one party (e.g., contract signed by a minor).</p>
+                    </div>
+                    <div class="status-card unenforceable">
+                        <h4>3. Unenforceable</h4>
+                        <p style="font-size:0.85rem; color:var(--text-muted);">Cannot be enforced in court unless ratified. Defect is lack of authority, failure to comply with Statute of Frauds, or both parties incapable.</p>
+                    </div>
+                    <div class="status-card void">
+                        <h4>4. Void / Inexistent</h4>
+                        <p style="font-size:0.85rem; color:var(--text-muted);">Produces no legal effect whatsoever. Absolutely null from the beginning (e.g., contract to sell illegal substances or illegal object).</p>
+                    </div>
+                </div>
+
+                <div class="scenario-box">
+                    <div class="scenario-title">💡 Real-Life Scenario: Voidable vs. Void</div>
+                    <p><strong>Voidable:</strong> A 16-year-old student buys a high-end laptop. The contract is valid until the parents or minor petition court to annul it.</p>
+                    <p style="margin-top:6px;"><strong>Void:</strong> Two individuals sign a written agreement to trade smuggled goods. The contract is completely void (inexistent) and unenforceable in court.</p>
+                </div>
+            </article>
+        </div>
+
+        <!-- FLASHCARDS GLOSSARY TAB -->
+        <div id="flashcards" role="tabpanel" class="tab-panel">
+            <h2 style="margin-bottom:0.5rem; color:var(--dark-navy);">Interactive Legal Terms Flashcards</h2>
+            <p style="margin-bottom:1.5rem; color:var(--text-muted);">Click any card to flip and view the legal definition and Latin terms used in Philippine law.</p>
+
+            <div class="flashcards-grid">
+                <!-- Card 1 -->
+                <div class="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <span>Latin Legal Term</span>
+                            <h3>Solutio Indebiti</h3>
+                            <p style="font-size:0.8rem; color:var(--text-muted);">Click to Flip 🔄</p>
+                        </div>
+                        <div class="flashcard-back">
+                            <p><strong>Quasi-Contract:</strong> Payment received by mistake when there was no legal right to demand it. The recipient is legally obligated to return the payment to prevent unjust enrichment.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <span>Latin Legal Term</span>
+                            <h3>Negotiorum Gestio</h3>
+                            <p style="font-size:0.8rem; color:var(--text-muted);">Click to Flip 🔄</p>
+                        </div>
+                        <div class="flashcard-back">
+                            <p><strong>Quasi-Contract:</strong> Voluntary management of the abandoned property or business of another without their prior knowledge or consent. The owner must reimburse necessary expenses.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <span>Legal Ground</span>
+                            <h3>Mora Solvendi</h3>
+                            <p style="font-size:0.8rem; color:var(--text-muted);">Click to Flip 🔄</p>
+                        </div>
+                        <div class="flashcard-back">
+                            <p><strong>Debtor Default:</strong> Delay on the part of the debtor to fulfill their obligation after extrajudicial or judicial demand from the creditor.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <span>Legal Defense</span>
+                            <h3>Caso Fortuito</h3>
+                            <p style="font-size:0.8rem; color:var(--text-muted);">Click to Flip 🔄</p>
+                        </div>
+                        <div class="flashcard-back">
+                            <p><strong>Fortuitous Event:</strong> Extraordinary events which could not be foreseen, or which though foreseen were inevitable (e.g., earthquakes, typhoons, acts of war).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <span>Source of Obligation</span>
+                            <h3>Culpa Aquiliana</h3>
+                            <p style="font-size:0.8rem; color:var(--text-muted);">Click to Flip 🔄</p>
+                        </div>
+                        <div class="flashcard-back">
+                            <p><strong>Quasi-Delict / Tort:</strong> Negligence that causes damage independent of any pre-existing contractual relationship between the parties (Art. 2176).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTRACT VALIDATOR TOOL TAB -->
+        <div id="checker" role="tabpanel" class="tab-panel">
+            <div class="checker-tool">
+                <h2 style="color:var(--dark-navy); margin-bottom:0.4rem;">Interactive Contract Requisites Validator</h2>
+                <p style="color:var(--text-muted); font-size:0.9rem;">Select contract parameters below to test legal status according to Articles 1318, 1380, and 1409 of the Civil Code.</p>
+
+                <form class="checker-form" id="validatorForm">
+                    <div class="form-group">
+                        <label for="valConsent">1. Consent Status:</label>
+                        <select id="valConsent">
+                            <option value="valid">Valid &amp; Freely Given</option>
+                            <option value="vitiated">Vitiated (Intimidation, Fraud, Mistake)</option>
+                            <option value="minor">One Party Incapable (Minor / Insane)</option>
+                            <option value="both_incapable">Both Parties Incapable</option>
+                            <option value="none">No Consent Given / Simulated</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="valObject">2. Object / Subject Matter:</label>
+                        <select id="valObject">
+                            <option value="valid">Licit &amp; Legal (e.g. Laptop, Service)</option>
+                            <option value="illegal">Illegal / Outside Commerce (e.g. Smuggled Goods)</option>
+                            <option value="impossible">Impossible Service (e.g. Fly without equipment)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="valCause">3. Cause / Consideration:</label>
+                        <select id="valCause">
+                            <option value="valid">Licit &amp; Valid Price/Service</option>
+                            <option value="false">Unlawful / Fictitious Cause</option>
+                            <option value="absent">No Cause / Consideration</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="valLesion">4. Financial Lesion / Harm:</label>
+                        <select id="valLesion">
+                            <option value="none">Fair Value / No Harm</option>
+                            <option value="fraud_creditor">Intended to Defraud Creditors</option>
+                            <option value="ward_damage">Damages Ward Property by > 25%</option>
+                        </select>
+                    </div>
+                <div class="form-group">
+                        <label for="valAuthority">5. Authority &amp; Form:</label>
+                        <select id="valAuthority">
+                            <option value="ok">Proper Authority / Form Complied</option>
+                            <option value="no_authority">Agent Acted Without Authority</option>
+                            <option value="statute_of_frauds">Required Writing Missing (Statute of Frauds)</option>
+                        </select>
+                    </div>
+                </form>
+
+                <div class="checker-result" id="checkerResultDisplay">
+                    <h3 id="resultTitle" style="color:var(--primary);">Status: Valid Contract</h3>
+                    <p id="resultDesc" style="font-size:0.9rem;">All essential requisites under Article 1318 (Consent, Object Certain, and Cause) are present without defects. The contract is binding and enforceable in court.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8-QUESTION QUIZ TAB -->
+        <div id="quiz" role="tabpanel" class="tab-panel">
+            <div class="quiz-container">
+                <h2 style="color:var(--dark-navy); margin-bottom:0.4rem;">Obligations &amp; Contracts Knowledge Check</h2>
+                <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1.5rem;">Answer all 8 questions to evaluate your understanding. Click "Submit Quiz" at the bottom to check score.</p>
+
+                <form id="quizForm">
+                    <!-- Question 1 -->
+                    <div class="quiz-question" data-q="1" data-correct="B">
+                        <p>1. Article 1156 defines an obligation as a juridical necessity to:</p>
+                        <div class="quiz-options">
+                            <label class="option-label"><input type="radio" name="q1" value="A"> A) Sign notarized contracts before a lawyer</label>
+                            <label class="option-label"><input type="radio" name="q1" value="B"> B) Give, to do, or not to do</label>
+                            <label class="option-label"><input type="radio" name="q1" value="C"> C) Pay taxes exclusively to the government</label>
+                            <label class="option-label"><input type="radio" name="q1" value="D"> D) Perform acts approved by municipal ordinance</label>
+                        </div>
+                        <div class="quiz-explanation">Explanation: Art. 1156 explicitly defines an obligation as a juridical necessity to give, to do, or not to do.</div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="quiz-question" data-q="2" data-correct="C">
+                        <p>2. Accidental overpayment received through GCash generates an obligation to return under which source?</p>
+                        <div class="quiz-options">
+                            <label class="option-label"><input type="radio" name="q2" value="A"> A) Delict (Crime)</label>
+                            <label class="option-label"><input type="radio" name="q2" value="B"> B) Expressed Contract</label>
+                            <label class="option-label"><input type="radio" name="q2" value="C"> C) Quasi-Contract (Solutio Indebiti)</label>
+                            <label class="option-label"><input type="radio" name="q2" value="D"> D) Quasi-Delict (Tort)</label>
+                        </div>
+                        <div class="quiz-explanation">Explanation: Solutio Indebiti is a quasi-contract created to prevent unjust enrichment when money or property is delivered by mistake.</div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="quiz-question" data-q="3" data-correct="A">
+                        <p>3. What standard of care is required for an obligor to preserve a specific thing (Art. 1163)?</p>
+                        <div class="quiz-options">
+                            <label class="option-label"><input type="radio" name="q3" value="A"> A) Diligence of a good father of a family</label>
+                            <label class="option-label"><input type="radio" name="q3" value="B"> B) Absolute extraordinary diligence in all cases</label>
+                            <label class="option-label"><input type="radio" name="q3" value="C"> C) Minimal diligence</label>
+                            <label class="option-label"><input type="radio" name="q3" value="D"> D) No diligence required unless paid</label>
+                        </div>
+                        <div class="quiz-explanation">Explanation: Unless the law or contract states otherwise, Art. 1163 requires the diligence of a good father of a family.</div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="quiz-question" data-q="4" data-correct="B">
+                        <p>4. Deliberate intent to evade the normal fulfillment of an obligation is known as:</p>
+                        <div class="quiz-options">
+                            <label class="option-label"><input type="radio" name="q4" value="A"> A) Negligence (Culpa)</label>
+                            <label class="option-label"><input type="radio" name="q4" value="B"> B) Fraud (Dolo)</label>
+                            <label class="option-label"><input type="radio" name="q4" value="C"> C) Delay (Mora)</label>
+                            <label class="option-label"><input type="radio" name="q4" value="D"> D) Caso Fortuito</label>
+                        </div>
+                        <div class="quiz-explanation">Explanation: Fraud (Dolo) under Art. 1170 is deliberate evasion of an obligation's performance.</div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="quiz-question" data-q="5" data-correct="D">
+                        <p>5. Which of the following is NOT an essential requisite of a contract under Article 1318?</p>
+                        <div class="quiz-options">
+                            <label class="option-label"><input type="radio" name="q5" value="A"> A) Consent of contracting parties</label>
+                            <label class="option-label"><input type="radio" name="q5" value="B"> B) Object Certain</label>
+                            <label class="option-label"><input type="radio" name="q5" value="C"> C) Cause or Consideration</label>
+                            <label class="option-label"><input type="radio" name="q5" value="D"> D) Written Notarization by a Law Firm</label>
+                        </div>
+                        <div class="quiz-explanation">Explanation: Contracts are generally consensual (Art. 1318). Notarization is not an essential element for validity, though required for certain public documents.</div>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="quiz-question" data-q="6" data-correct="B">
+                        <p>6. A contract entered into by an un-emancipated minor without parental consent is categorized as:</p>
+                        <div class="quiz-options">
+                            <label class="option-label"><input type="radio" name="q6" value="A"> A) Rescissible</label>
+                            <label class="option-label"><input type="radio" name="q6" value="B"> B) Voidable</label>
+                            <label class="option-label"><input type="radio" name="q6" value="C"> C) Void from the beginning</label>
+                            <label class="option-label"><input type="radio" name="q6" value="D"> D) Valid and unimpeachable</label>
+                        </div>
+                        <div class="quiz-explanation">Explanation: Incapacity of one of the parties (such as minority) makes a contract voidable (valid until annulled by court).</div>
+                    </div>
+
+                    <!-- Question 7 -->
+                    <div class="quiz-question" data-q="7" data-correct="C">
+                        <p>7. A contract with an illegal object (e.g., selling prohibited drugs) is:</p>
+                        <div class="quiz-options">
+                            <label class="option-label"><input type="radio" name="q7" value="A"> A) Voidable within 4 years</label>
+                            <label class="option-label"><input type="radio" name="q7" value="B"> B) Rescissible due to lesion</label>
+                            <label class="option-label"><input type="radio" name="q7" value="C"> C) Void / Inexistent from the beginning</label>
+                            <label class="option-label"><input type="radio" name="q7" value="D"> D) Unenforceable</label>
+                        </div>
+                        <div class="quiz-explanation">Explanation: Under Art. 1409, contracts whose cause or object is contrary to law or public order are void and inexistent from the beginning.</div>
+                    </div>
+
+                    <!-- Question 8 -->
+                    <div class="quiz-question" data-q="8" data-correct="A">
+                        <p>8. What is the legal effect of a Fortuitous Event (Art. 1174) when a debtor is NOT in delay?</p>
+                        <div class="quiz-options">
+                            <label class="option-label"><input type="radio" name="q8" value="A"> A) Extinguishes liability for non-performance</label>
+                            <label class="option-label"><input type="radio" name="q8" value="B"> B) Doubles the damages owed to the creditor</label>
+                            <label class="option-label"><input type="radio" name="q8" value="C"> C) Converts the obligation into a quasi-delict</label>
+                            <label class="option-label"><input type="radio" name="q8" value="D"> D) Has no effect; the debtor is always liable</label>
+                        </div>
+                        <div class="quiz-explanation">Explanation: Under Art. 1174, a person is not liable for unforeseeable or inevitable events unless there is delay, a contrary law or stipulation, or the obligation requires assumption of risk.</div>
+                    </div>
+                </form>
+
+                <button type="button" class="action-btn" id="submitQuiz">Submit quiz</button>
+                <button type="button" class="action-btn secondary" id="retakeQuiz" hidden>Retake quiz</button>
+                <div id="scoreBanner" class="score-banner" role="status" aria-live="polite"></div>
+            </div>
+        </div>
+
+        <!-- SAVED REVIEWER TAB -->
+        <div id="bookmarks" role="tabpanel" class="tab-panel">
+            <h2 style="color:var(--dark-navy); margin-bottom:0.4rem;">Saved Reviewer</h2>
+            <p style="color:var(--text-muted); margin-bottom:1.2rem;">Lessons you saved appear here and stay in this browser.</p>
+            <div id="savedContainer"></div>
+        </div>
+    </main>
+
+    <footer>Study guide based on the Civil Code of the Philippines (R.A. 386). For learning only, not legal advice.</footer>
+    <div id="toastNotification" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
